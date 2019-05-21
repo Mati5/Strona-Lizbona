@@ -1,0 +1,130 @@
+.navbar {
+    background-color: #fff;
+    width: 100%;
+    min-height: 80px;
+    box-shadow: 0px 0px 5px #666;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+
+    @media(min-width: 992px) {
+        height: 80px;
+    }
+    
+
+    &__container {
+
+        @media(min-width: 992px) {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        @media(min-width: 768px) {
+            font-size: 20px;
+        }
+    }
+
+    &__menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+       // display: none;
+       border-top: 1px solid #ddd;
+       padding-top: 40px;
+       display: none;
+
+        @media(min-width: 992px) {
+            display: flex;
+            align-items: center;
+            padding: 0;
+            border: none;
+        }
+    }
+
+    &__item {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+
+        @media(min-width: 992px) {
+            width: auto;
+            text-align: left;
+            padding: 0;
+        }
+    }
+
+    &__link {
+        color: #000;
+        font-size: 14px;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        transition: 0.2s linear; 
+        display: block;
+    }
+
+    &__link:hover,
+    &__active {
+        color: #ff4a4a;
+
+        @media(min-width: 768px) {
+            border-bottom: 1px solid #ff4a4a;
+        }
+    }
+
+    &__hamburger {
+        background-color: transparent;
+        width: 40px;
+        height: 35px;
+        border: 0;
+        border-top: 3px solid red;
+        position: relative;
+        //border: 1px solid red;
+
+        @media(min-width: 992px) {
+            display: none;
+        }
+
+        &:before,
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            border-top: 3px solid red;
+            transform: translateY(25px);
+        }
+
+        &:before {
+            transform: translateY(11px);
+        }
+    }
+
+    &__btn-container {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        z-index: 999;
+    }
+}
+
+.navbar__menu.active {
+    display: flex;
+}

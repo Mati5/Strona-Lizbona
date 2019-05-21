@@ -1,0 +1,37 @@
+.gallery-page {
+    padding: 40px 0;
+    
+}
+
+.gallery {
+
+    &__nav {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 35%;
+        margin: 0 auto;
+    }
+
+    &__item {
+        padding: 5px 10px;
+    }
+
+    &__btn {  
+        background-color: #ddd;
+        color: #222;
+        font-size: 14px;
+        border: 0;
+        border-radius: 6px;
+        padding: 5px 10px;
+        transition: 0.3s background ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #ccc;
+        }
+    }
+}

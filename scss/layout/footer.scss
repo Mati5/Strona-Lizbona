@@ -1,0 +1,43 @@
+.page-footer {
+    
+    &__container--copyright,
+    &__container {
+        display: block;
+
+        @media(min-width: 768px) {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__container--copyright {
+        justify-content: space-between;
+        //padding: 25px 0;
+
+        @media(min-width: 768px) {
+            padding: 25px 0;
+        }
+    }
+
+    &__banners {
+        background-color: #f1f1f1;
+        padding: 25px 0;
+    }
+
+    &__banner {
+        max-width: 200px;
+        //max-height: 100px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 25px auto;
+
+        @media(min-width: 768px) {
+            max-width: 250px;
+            padding: 0 25px;
+            margin: 0;
+        }
+    }
+}

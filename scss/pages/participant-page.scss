@@ -1,0 +1,48 @@
+.participant-page {
+    padding: 40px 0;
+
+    &__list li {
+        padding-bottom: 8px;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__photo {
+        
+    }
+
+    &__tile {
+        width: 60%;
+    }
+
+    &__tile--first {
+        width: 40%;
+    }
+}
+
+.participant {
+
+    &__box {
+        display: block;
+
+        @media(min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
+    &__item {
+        //width: 100%;
+
+        @media(min-width: 768px) {
+            width: 40%;
+            //margin-right: 150px;
+        }
+    }
+}
+

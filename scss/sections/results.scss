@@ -1,0 +1,39 @@
+// .results {
+//     background-color: #f1f1f1;
+//     padding: 40px 0;
+//     line-height: 25px;
+// }
+
+.results {
+    background-color: #f1f1f1;
+    line-height: 25px;
+    
+    
+    @media(min-width: 992px) {
+        display: flex;
+    }
+
+    &__img {
+        background-image: url("../img/slides/slide-0.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+
+        @media(min-width: 768px) {
+            height: 400px;
+        }
+
+        @media(min-width: 992px) {
+            width: 35%;
+            height: auto;
+        }
+    }
+
+    &__content {
+        padding: 40px;
+
+        @media(min-width: 992px) {
+            width: 65%;
+        }
+    }
+}

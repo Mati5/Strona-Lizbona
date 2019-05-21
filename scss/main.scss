@@ -1,0 +1,125 @@
+@import "base/normalize";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fefefe;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #666;    
+    margin-top: 80px;
+
+    @media(min-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+.orange {
+    color: #ff4a4a;
+}
+
+.container {
+    width: 100%;
+    padding: 0 25px;
+
+    @media(min-width: 768px) {
+        width: 750px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    @media(min-width: 992px) {
+        width: 970px;
+    }
+
+    @media(min-width: 1200px) {
+        width: 1170px;
+    }
+}
+
+.section-title {
+    color: #333;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Dosis', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+
+    @media (min-width: 768px) {
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+    
+    &__icon {
+        width: 40px;
+        height: 40px;
+        background-color: #f1f1f1;
+        color: #ff4a4a;
+        border: 2px solid #ff4a4a;
+        transform: rotate(45deg);
+        margin-right: 20px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media(min-width: 768px) {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    i {
+        font-size: 18px;
+        transform: rotate(-45deg);
+
+        @media(min-width: 768px) {
+            font-size: 24px;
+        }
+    }
+
+    &--left {
+        justify-content: flex-start;
+    }
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+
+@import "component/navbar";
+@import "component/buttons";
+
+@import "sections/slider";
+@import "sections/about";
+@import "sections/results";
+@import "sections/gallery";
+@import "sections/process";
+
+@import "pages/about-page";
+@import "pages/process-page";
+@import "pages/gallery-page";
+@import "pages/participant-page";
+@import "pages/institution-page";
+@import "pages/preparation-page";
+
+@import "layout/footer";

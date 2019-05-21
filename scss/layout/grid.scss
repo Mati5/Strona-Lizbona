@@ -1,0 +1,27 @@
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    padding: 0 25px;
+}
+
+.box-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    align-items: flex-start;
+}
+
+.col-12 {
+	width: 100%;	
+}
+
+.col-6 {
+    width: 50%;
+}
